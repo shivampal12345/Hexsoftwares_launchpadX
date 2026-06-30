@@ -226,7 +226,7 @@ export function FeaturedStartups({
                         </div>
                       </div>
 
-                      <div className="flex space-x-3 pt-2">
+                      <div className="grid grid-cols-2 gap-3 pt-2">
                         <Button
                           variant="outline"
                           className="flex-1 text-sm font-bold"
@@ -234,12 +234,6 @@ export function FeaturedStartups({
                         >
                           View Details
                         </Button>
-                        <Link
-                          href={`/startups/${startup.id}`}
-                          className="inline-flex flex-1 items-center justify-center rounded-xl bg-secondary px-4 py-3 text-sm font-bold text-white transition-all hover:bg-teal-600"
-                        >
-                          Open Page
-                        </Link>
                         <Button
                           variant="gradient"
                           className="flex-1 text-sm font-bold"
@@ -247,6 +241,12 @@ export function FeaturedStartups({
                         >
                           Invest Now
                         </Button>
+                        <Link
+                          href={`/startups/${startupId}`}
+                          className="col-span-2 inline-flex h-11 items-center justify-center rounded-xl bg-secondary px-4 text-sm font-bold text-white shadow-md shadow-teal-500/10 transition-all hover:bg-teal-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                        >
+                          Open Page
+                        </Link>
                       </div>
                     </div>
                   </motion.div>
