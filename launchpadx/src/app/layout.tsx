@@ -6,6 +6,7 @@ import { QueryProvider } from "@/components/providers/QueryProvider";
 import { AuthProvider } from "@/components/providers/AuthProvider";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 import { ToastProvider } from "@/components/ui/Toast";
+import { ScrollToTopButton } from "@/components/ui/ScrollToTopButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -60,6 +61,7 @@ export default function RootLayout({
               <ToastProvider>
                 <AnimatedBackground />
                 {children}
+                <ScrollToTopButton />
               </ToastProvider>
             </QueryProvider>
           </AuthProvider>
